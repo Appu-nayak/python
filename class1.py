@@ -18,7 +18,7 @@ print(apple[-3])'''
 print(banana)
 
 for i in banana:
-    print(i,end=" ")'''2
+    print(i,end=" ")'''
 
 '''college=[10,20,30,40,50]
 print(college[1])
