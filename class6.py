@@ -1,4 +1,4 @@
-name=float(input("enter name:"))
+name=float(input("enter tax:"))
 print(name)
 print (type(name))
 
