@@ -97,21 +97,9 @@ class TestPlayerDatabase(unittest.TestCase):
         self.db.delete_player(1)
         self.assertNotIn(1, self.db.players)
     
-    def test_display_players(self):
-        # Redirect stdout to capture printed output
-        #import sys
-        #from io import StringIO
-        #captured_output = StringIO()
-        #sys.stdout = captured_output
-        
+    def test_display_players(self): 
         self.db.display_players()
-        
-        #sys.stdout = sys.__stdout__  # Reset redirect
-        #printed_output = captured_output.getvalue().strip()
-        
-        #expected_output = "Player ID: 1, Name: John Doe, Skills: football\nPlayer ID: 2, Name: Jane Smith, Skills: cricket"
-        #self.assertEqual(printed_output, expected_output)
-
+       
 class TestTeamDatabase(unittest.TestCase):
     def setUp(self):
         self.db = TeamDatabase()
@@ -136,18 +124,7 @@ class TestTeamDatabase(unittest.TestCase):
         self.assertNotIn(1, self.db.teams)
     
     def test_display_teams(self):
-        # Redirect stdout to capture printed output
-        #import sys
-        #from io import StringIO
-        ##sys.stdout = captured_output
-        
         self.db.display_teams()
         
-        #sys.stdout = sys.__stdout__  # Reset redirect
-        #printed_output = captured_output.getvalue().strip()
-        
-        #expected_output = "Team ID: 1, Name: A\nTeam ID: 2, Name: B"
-        #self.assertEqual(printed_output, expected_output)
-
 if __name__ == '__main__':
     unittest.main(argv=[''],verbosity=3,exit=False)
